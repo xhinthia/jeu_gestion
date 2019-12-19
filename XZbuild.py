@@ -5,64 +5,28 @@ from fonctions import *
 
 a=1
 while a==1:
-	bandeau_clean("MENU PRINCIPAL")
-	print ("<><><><><><><><><><><><><><><>")
-	print (" ")
-	print ("1 > Expédition")
-	print ("")
-	print ("2 > Quartier royal")
-	print ("")
-	print ("3 > Quartier marchand")
-	print ("")
-	print ("0 > Quitter")
-	print (" ")
-	print ("<><><><><><><><><><><><><><><>")
-	choix=input()
+	choix=menu_3_choix("MENU PRINCIPAL","Expédition","Grand place","Quartier marchand","Quitter")
 	if str(choix)=="0":
 		quit()
 	elif str(choix)=="1":
 		b=1
 		while b==1:
-			bandeau_clean("EXPEDITION")
-			print ("<><><><><><><><><><><><><><><>")
-			print ("")
-			print ("1 > Combat") #action de combattre > choisis une troupe parmi les 3 > combat auto
-			print ("")
-			print ("2 > Minage") #action de miner : dure X secondes et toutes les 2s ou 3s pop-up
-			print ("")
-			print ("3 > Entraînement") #Utilise de l'or pour soit découvrir un nouveau type de mob soit up les présents
-			print ("")
-			print ("0 > Retour")
-			print ("")
-			print ("<><><><><><><><><><><><><><><>")
-			choix=input()
+			choix=menu_3_choix("EXPEDITION","Combat","Minage","Entraînement","Retour")
 			if str(choix)=="0":
 				b=0
 				pass
 			elif str(choix)=="1":
-				combat()
+				choix=menu_3_choix("COMBAT","Combattre","Sélectionner un groupe","Composition des groupes","Retour")
 			elif str(choix)=="2":
-				minage()
+				choix=menu_3_choix("MINAGE","Miner","Améliorer mine","Améliorer équipement")
 			elif str(choix)=="3":
-				entrainement()
+				choix=menu_3_choix("ENTRAINEMENT","Financer","")
 			else:
 				pass
 	elif str(choix)=="2":
 		b=1
 		while b==1:
-			bandeau_clean("QUARTIER ROYAL")
-			print ("<><><><><><><><><><><><><><><>")
-			print ("")
-			print ("1 > Hall de guerre") # Consulter les troupes, carac, comp, lvl
-			print ("")
-			print ("2 > Salle des archives") #consulter les ennemis (déjà croisé ?)
-			print ("")
-			print ("3 > Eglise") #consulter les livres sacrés (artefacts)
-			print ("")
-			print ("0 > Retour")
-			print ("")
-			print ("<><><><><><><><><><><><><><><>")
-			choix=input()
+			choix=menu_3_choix("GRAND PLACE","Hall de guerre","Salle des archives","Eglise","Retour")
 			if str(choix)=="0":
 				b=0
 				pass
@@ -77,19 +41,7 @@ while a==1:
 	elif str(choix)=="3":
 		b=1
 		while b==1:
-			bandeau_clean("QUARTIER MARCHAND")
-			print ("<><><><><><><><><><><><><><><>")
-			print ("")
-			print ("1 > Forgeron") #amélioration equipement
-			print ("")
-			print ("2 > Charpentier") #amélioration batiment contre minerais + or
-			print ("")
-			print ("3 > Marché noir") #amélioration générale du jeu
-			print ("")
-			print ("0 > Retour")
-			print ("")
-			print ("<><><><><><><><><><><><><><><>")
-			choix=input()
+			choix=menu_3_choix("QUARTIER MARCHAND","Forgeron","Charpentier","Marché noir","Retour")
 			if str(choix)=="0":
 				b=0
 				pass
