@@ -16,11 +16,11 @@ while a==1:
 				b=0
 				pass
 			elif str(choix)=="1":
-				choix=menu_3_choix("COMBAT","Combattre","Sélectionner un groupe","Composition des groupes","Retour")
+				choix=menu_3_choix("COMBAT","Combattre","Sélectionner un groupe","Créer un groupe","Retour")
 			elif str(choix)=="2":
-				choix=menu_3_choix("MINAGE","Miner","Améliorer mine","Améliorer équipement")
+				choix=menu_3_choix("MINAGE","Miner","Améliorer mine","Améliorer équipement","Retour")
 			elif str(choix)=="3":
-				choix=menu_3_choix("ENTRAINEMENT","Financer","")
+				choix=menu_3_choix("ENTRAINEMENT","Financer","","","Retour")
 			else:
 				pass
 	elif str(choix)=="2":
@@ -31,7 +31,7 @@ while a==1:
 				b=0
 				pass
 			elif str(choix)=="1":
-				hall_guerre()
+				choix=menu_3_choix("HALL DE GUERRE","Examiner les troupes","","","Retour")
 			elif str(choix)=="2":
 				salle_archive()
 			elif str(choix)=="3":
