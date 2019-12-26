@@ -10,7 +10,7 @@ mine s2 : rubis, diamant, topaze, emeraude
 EXPEDITION :
 	COMBAT :
 		Combattre -> Récupérer de l'or et des souvenirs
-		Siège -> "combat de boss", permet de changer de zone / récupérer beaucoup d'or, des souvenirs et surtout 1 livre sacré
+		Siège -> "combat de boss", permet de changer de zone / récupérer beaucoup d'or, des souvenirs et surtout 1 livre sacré ---- sleeptime et toutes les secondes votre groupe tape la porte automatique.
 		Groupe de combat -> définir le groupe des combats, si aucun par défaut
 
 	MINAGE :
@@ -32,34 +32,38 @@ EXPEDITION :
 QUARTIER ROYAL :
 
 	ARCHIVES :
-		check les carac des troupes -> 
-		check les carac des ennemis de ce niveau
-		check les livres sacrés
+		Revue des troupes : check les carac des troupes
+		Rapports de combat : check les carac ennemis
+		Coffre-fort : check les bijoux
 
 	CASERNE :
 		Entraînement militaire : utilise de l'or et des souvenirs pour soit découvrir nouvelle troupe soit up les déjà découvert
 		Entraînement tactique : utilise de l'or et des souvenirs pour up soit les gains de l'infiltration
-		Financer : permet de découvrir plus de troupe dans la caserne
+		Investir : permet de découvrir plus de troupe dans la caserne
 
-	FORGERON :
-		Equipement militaire : 
-		Equipement minier : augmente chance de puits de minage
-		Equipement espionnage : augmente chance de réussite
+	EGLISE :
+		Don d'Ares : augmente les chances de ???
+		Don d'héphaistos : augmente chance de puits de minage
+		Don d'Hermes : augmente chance de réussite d'infiltration
 
 
 QUARTIER MARCHAND :
 
 	MARCHE NOIR :
-		Taille du groupe -> nécessite livre sacré
-		Diminue temps de minage -> nécessite livre sacré
-		Diminue temps d'infiltration -> nécessite livre sacré
+		Pousée d'adrenaline (augmente de 5% les chances de terminer un combat instant - victoire) -> nécessite livre sacré
+		Méthode Stakhanov (augmente de 5% les chances de terminer un minage instant ) -> nécessite livre sacré
+		Cape d'invisibilité (augmente de 5% les chances de réussite d'une infiltration) -> nécessite livre sacré
 
 	HOTEL DES VENTES :
 		Acheter des pierres -> dépense de l'or pour avoir des pierres
 		Vendre des pierres -> dépense des pierres pour gagner de l'or
 		Financer -> améliore les propositions de l'hotel des ventes
 
-	BIJOUTERIE :
+	JOAILLERIE :
+		Créer une nouvelle gemme : utilise un ou des diamant
+		Améliorer une gemme : utilise un ou des diamant
+		Investir : up le batiment
+
 
 	
 

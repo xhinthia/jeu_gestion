@@ -3,7 +3,7 @@ import os
 import sys
 
 def menu_3_choix(titre,choix_1,choix_2,choix_3,choix_0):
-	os.system("clear")
+	os.system('cls' if os.name == 'nt' else 'clear')
 	print ("**********************************")
 	print ("")
 	print ("	"+str(titre))
@@ -23,3 +23,13 @@ def menu_3_choix(titre,choix_1,choix_2,choix_3,choix_0):
 	print ("<><><><><><><><><><><><><><><><><>")
 	choix=input()
 	return choix
+
+def pick_number(chance,total):
+	difference=total-chance
+	liste = []
+	for i in range(0,chance):
+		liste.append(1)
+	for i in range(0,difference):
+		liste.append(0)
+	a=random.choice(liste)
+	return liste
